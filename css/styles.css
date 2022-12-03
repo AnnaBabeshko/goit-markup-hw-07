@@ -1,3 +1,4 @@
+/*
 :root {
     --primari-text-color: #212121;
     --title-text-color: #757575;
@@ -15,6 +16,7 @@
     --header-idx: 10;
     --modal-idx: 100;
   }
+
   body {
     font-family: "Roboto", sans-serif;
     background-color: var(--background-color);
@@ -28,6 +30,15 @@
   p {
     margin: 0;
   }
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .link {
+    text-decoration: none;
+  }
+  
   img {
     display: block;
     max-width: 100%;
@@ -53,19 +64,11 @@
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
-    /*outline: 2px solid red;*/
   }
   .logo {
     font-family: none;
-  }
-  .list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .link {
-    text-decoration: none;
-  }
+  }*/
+  
   
   /*---------------------HEADER---------------------------------------*/
   .header {

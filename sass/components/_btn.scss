@@ -1,0 +1,7 @@
+button {
+   display: block;
+   cursor: pointer;
+   border: none;
+   border-radius: 4px;
+   transition: color var(--anim-fast), background-color var(--anim-fast);
+ }
