@@ -692,6 +692,7 @@
   }
   .modal-icon {
     fill: var(--text-color);
+    transition: fill var(--anim-fast);
   }
   .modal-icon:hover {
     fill: var(--accent-color);
@@ -734,8 +735,9 @@
     padding-left: 42px;
     padding-right: 42px;
     outline: transparent;
-    transition: border-color var(--anim-fast),
+    transition: border-color var(--anim-fast);
   }
+  
   .modal-form-field:focus {
       border-color: var(--accent-color);
   }
