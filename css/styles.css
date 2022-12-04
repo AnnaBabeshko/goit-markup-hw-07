@@ -362,10 +362,11 @@
     display: block;
     font-family: none;
   }
-  .foot-item {
+  .address__item {
     margin-bottom: 9px;
+    margin-right: 70px;
   }
-  .foot-item:last-child {
+  .address__item:last-child {
     margin-bottom: 0px;
   }
   .logo__item {
@@ -382,38 +383,37 @@
   .logo__item:focus {
     color: var(--accent-color);
   }
-  .kont-link {
+  .address__link {
     line-height: calc(24 / 14);
     color: var(--background-color);
     transition: color var(--anim-fast);
   }
-  .kont-link:hover,
-  .kont-link:focus {
+  .address__link:hover,
+  .address__link:focus {
     color: var(--accent-color);
   }
-  .kontakt-link {
+  .address__item {
     line-height: calc(24 / 14);
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--anim-fast);
   }
-  .kontakt-link:hover,
-  .kontakt-link:focus {
+  .address__item:hover,
+  .address__item:focus {
     color: var(--accent-color);
   }
-  .footer-text {
+  .footer__text {
     font-weight: 700;
     line-height: calc(16/14);
-    color: var(--background-color);
     margin-bottom: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--background-color);
   }
   .para {
     display: flex;
     align-items: baseline;
   }
-  .foot {
-    margin-right: 70px;
-  }
-  .foot-color-link {
+  .socials__item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -424,17 +424,17 @@
     color: var(--background-color);
     transition: background-color var(--anim-fast);
   }
-  .foot-color-icon {
+  .footer__icon {
     fill: currentColor;
   }
-  .foot-color-link:hover, .foot-color-icon 
-  .foot-color-link:focus .foot-color-icon {
+  .socials__item:hover, .foot-color-icon 
+  .socials__item:focus .foot-color-icon {
     background-color: var(--accent-color);
   }
-  .footer-email {
+  .footer__email {
     margin-left: auto;
   }
-  .footer-email input {
+  .footer__email input {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -445,16 +445,8 @@
     line-height: calc(20/16);
     padding: 16px 15px;
   }
-  .footer-text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    color: var(--background-color);
-  }
-  .footer-form-field {
+  
+  .form__field {
     color: var(--background-color)  ;
     outline: none;
     display: block;
@@ -472,10 +464,6 @@
     min-width: 216px;
     text-align: center;
     cursor: pointer;
-    color: var(--thirdy-color);
-    background-color: var(--accent-color);
-    border-width: 0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: var(--background-color);
     background-color: var(--acent-color);
@@ -485,27 +473,27 @@
   .form-btn:focus {
      background-color: var(--grey-color);
   }
-  .footer-form {
+  .form {
     display: flex;
   }
-  .icon-teleg {
+  .form__icon {
     position: absolute;
     fill: var(--background-color);
     margin-left: 10px;
   }
   /*----------------PORT-FILTR----------*/
-  .port-btn-container {
+  .filtr {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
   }
-  .port-btn-item {
+  .filtr__item {
     margin-right: 8px;
   }
-  .port-btn-item:last-child {
+  .filtr__item:last-child {
     margin-right: 0px;
   }
-  .port-btn {
+  .filtr__btn {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -517,26 +505,23 @@
     padding: 6px 25px;
     transition: box-shadow var(--anim-fast), color var(--anim-fast), background-color var() ;
   }
-  .port-btn:hover,
-  .port-btn:focus {
+  .filtr__btn:hover,
+  .filtr__btn:focus {
     color: var(--background-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
   /*-----------------PORT-LIST------------*/
-  .port-list-container {
+  .port {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
-  .port-list-item {
+  .port__item {
     width: 370px;
   }
-  .port-link:hover .port-overlay, 
-  .port-link:focus .port-overlay {
-    transform: translate(0);
-  }
+  
   .port-thumb {
     position: relative;
     overflow: hidden;
@@ -556,27 +541,31 @@
     background-color: rgba(33, 150, 243, 0.9);
     backdrop-filter: blur(3px);
     user-select: none;
-  }
-  .port-overlay-text {
     color: var(--background-color);
     font-size: 18px;
     line-height: calc(28 / 18);
     letter-spacing: 0.03em;
   }
-  .port-link {
+  
+  .port__link {
     display: block;
     transition: box-shadow var(--anim-fast);
   }
-  .port-link:hover, 
-  .port-link:focus {
+  .port__link:hover, 
+  .port__link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  .cart-cont {
+  .port__link:hover .port-overlay, 
+  .port__link:focus .port-overlay {
+    transform: translate(0);
+  }
+  
+  .port__cart {
     padding: 20px 24px;
     /*outline: 2px solid green;*/
     border: 1px solid #EEEEEE;
   }
-  .port-title {
+  .port__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -584,7 +573,7 @@
     margin-bottom: 4px;
     color: var(--primari-text-color);
   }
-  .port-text {
+  .port__text {
     font-size: 16px;
     line-height: (30/16);
     letter-spacing: 0.03em;
@@ -692,14 +681,14 @@
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
-  .modal-icon {
+  .modal__icon {
     fill: var(--text-color);
     transition: fill var(--anim-fast);
   }
-  .modal-icon:hover {
+  .modal__icon:hover {
     fill: var(--accent-color);
   }
-  .modal-neim {
+  .modal__neim {
     display: block;
     text-align: center;
     font-weight: 700;
@@ -707,16 +696,16 @@
     line-height: calc(23 / 20);
     margin-bottom: 12px;
   }
-  .modal-form {
+  .modal__form {
     display: block;
     width: 448px;
     margin-left: auto;
     margin-right: auto;
   }
-  .modal-form-group {
+  .modal__group {
     margin-bottom: 20px;
   }  
-  .modal-form-Label {
+  .modal__Label {
     display: block;
     font-weight: 400;
     font-size: 12px;
@@ -725,11 +714,11 @@
     color: var(--title-text-color);
     margin-bottom: 4px;
   } 
-  .modal-form-wrapper {
+  .modal__wrapper {
     position: relative;
     margin-bottom: 10px;
   }
-  .modal-form-field {
+  .modal__field {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -740,20 +729,20 @@
     transition: border-color var(--anim-fast);
   }
   
-  .modal-form-field:focus {
+  .modal__field:focus {
       border-color: var(--accent-color);
   }
-  .modal-form-icon {
+  .form-icon {
     position: absolute;
     left: 12px;
     transform: translateY(-50%);
     top: 50%;
     transition: fill var(--anim-fast);
   }
-  .modal-form-field:focus + .modal-form-icon {
+  .modal__field:focus + .form-icon {
     fill: var(--accent-color);
   }
-  .modal-form-message {
+  .form-message {
     width: 100%;
     height: 120px;
     resize: none;
@@ -763,24 +752,24 @@
     outline: transparent;
     transition: border-color var(--anim-fast),
   }
-  .modal-form-message:focus {
+  .form-message:focus {
       border-color: var(--accent-color);
   }
-  .modal-form-massage::placeholder {
+  .form-massage::placeholder {
     margin-top: 10px;
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
-  .modal-form-agreement {
+  .agreement {
     display: flex;
     align-items: center;
     gap: 10px;
     justify-content: center;
     margin-bottom: 30px;
   }
-  .modal-form-checkbox {
+  .checkbox {
     appearance: none;
     width: 16px; ;
     height: 15px;
@@ -794,19 +783,19 @@
     background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E%0A");
     transition: 500ms
   }
-  .modal-form-checkbox:checked {
+  .checkbox:checked {
     outline-color: var(--accent-color);
     background-color: var(--accent-color);
     background-size: 11px 8px;
   }
-  .modal-form-agreement-disc {
+  .agreement-disc {
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     user-select: none;
   }
-  .modal-form-agreement-linc {
+  .agreement-linc {
     color: var(--accent-color);
     text-underline-offset: 3px;
   }

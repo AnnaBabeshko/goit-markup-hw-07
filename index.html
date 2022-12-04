@@ -479,29 +479,29 @@
     <!--Контакты-->
     <footer class="footer">
       <div class="container para">
-        <div class="foot">
+        <div>
           <a class="logo link" href="./index.html"
             ><span class="logo__start link">Web</span
             ><span class="logo__item link">Studio</span></a
           >
           <address>
-            <ul class="footer-addres list">
-              <li class="foot-item">
+            <ul class="list">
+              <li class="address__item">
                 <a
                   href="https://goo.gl/maps/duYvpXqUPSrrjTb77"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="kont-link link"
+                  class="address__link link"
                   >м.Київ, пр-т Лесі Українки, 26,</a
                 >
               </li>
-              <li class="foot-item">
-                <a href="mailto:info@devstudio.com" class="kontakt-link link"
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__item link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="foot-item">
-                <a href="tel:+380961111111" class="kontakt-link link"
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__item link"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -509,68 +509,68 @@
           </address>
         </div>
         <div>
-          <p class="footer-text">ПРИЄДНУЙТЕСЯ</p>
+          <p class="footer__text">ПРИЄДНУЙТЕСЯ</p>
           <ul class="socials list">
-            <li class="socials-item">
+            <li>
               <a
-                class="foot-color-link link"
+                class="socials__item link"
                 href="https://instagrfoot-color"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram icon"
               >
-                <svg class="foot-color-icon" width="20" height="20">
+                <svg class="footer__icon" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="socials-item">
+            <li>
               <a
-                class="foot-color-link link"
+                class="socials__item link"
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="twitter icon"
               >
-                <svg class="foot-color-icon" width="20" height="20">
+                <svg class="footer__icon" width="20" height="20">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="socials-item">
+            <li>
               <a
-                class="foot-color-link link"
+                class="socials__item link"
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="facebook icon"
               >
-                <svg class="foot-color-icon" width="20" height="20">
+                <svg class="footer__icon" width="20" height="20">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="socials-item">
+            <li>
               <a
-                class="foot-color-link link"
+                class="socials__item link"
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="linkedin icon"
               >
-                <svg class="foot-color-icon" width="20" height="20">
+                <svg class="footer__icon" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-email">
-          <p class="footer-text">Підпишіться на розсилку</p>
-          <form class="footer-form">
+        <div class="footer__email">
+          <p class="footer__text">Підпишіться на розсилку</p>
+          <form class="form">
             <label for="email"></label>
             <input
-              class="footer-form-field"
+              class="form__field"
               type="text"
               name="email"
               id="email"
@@ -579,7 +579,7 @@
             />
             <button class="form-btn" type="submit">
               Підписатися
-              <svg class="icon-teleg" width="24" height="24">
+              <svg class="form__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-teleg"></use>
               </svg>
             </button>
@@ -592,73 +592,73 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
-          <svg class="modal-icon" width="18" height="18">
+          <svg class="modal__icon" width="18" height="18">
             <use href="./images/icons.svg#icon---18-2-1"></use>
           </svg>
         </button>
-        <strong class="modal-neim"
+        <strong class="modal__neim"
           >Залиште свої дані, ми вам передзвонимо</strong
         >
-        <form class="modal-form" name="modal_form">
-          <div class="modal-form-group" role="group">
-            <label class="modal-form-Label" for="user_name">Ім'я</label>
-            <div class="modal-form-wrapper">
+        <form class="modal__form" name="modal_form">
+          <div class="modal__group" role="group">
+            <label class="modal__Label" for="user_name">Ім'я</label>
+            <div class="modal__wrapper">
               <input
-                class="modal-form-field"
+                class="modal__field"
                 type="text"
                 name="user_name"
                 id="user_name"
                 required
                 minlength="3"
               />
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="form-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
             </div>
-            <label class="modal-form-Label" for="user_phone">Телефон</label>
-            <div class="modal-form-wrapper">
+            <label class="modal__Label" for="user_phone">Телефон</label>
+            <div class="modal__wrapper">
               <input
-                class="modal-form-field"
+                class="modal__field"
                 type="tel"
                 name="user_phone"
                 id="user_phone"
                 required
                 minlength="10"
               />
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="form-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
               </svg>
             </div>
-            <label class="modal-form-Label" for="user_mail">Пошта</label>
-            <div class="modal-form-wrapper">
+            <label class="modal__Label" for="user_mail">Пошта</label>
+            <div class="modal__wrapper">
               <input
-                class="modal-form-field"
+                class="modal__field"
                 type="email"
                 name="user_mail"
                 id="user_mail"
               />
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="form-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
               </svg>
             </div>
-            <label class="modal-form-Label" for="user_massage">Коментар</label>
+            <label class="modal__Label" for="user_massage">Коментар</label>
             <textarea
-              class="modal-form-message"
+              class="form-message"
               name="user_message"
               id="user_message"
               rows="6"
               placeholder="Введіть текст"
             ></textarea>
-          </div>
-          <div class="modal-form-agreement" role="group">
+            </div>
+            <div class="agreement" role="group">
             <input
-              class="modal-form-checkbox"
+              class="checkbox"
               type="checkbox"
               id="user_agreement"
             />
-            <label class="modal-form-agreement-disc" for="user_agreement"
+            <label class="agreement-disc" for="user_agreement"
               >Погоджуюся з розсилкою та приймаю
-              <a class="modal-form-agreement-linc" href=""
+              <a class="agreement-linc" href=""
                 >Умови договору"</a
               ></label
             >
