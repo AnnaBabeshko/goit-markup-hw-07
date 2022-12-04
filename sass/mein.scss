@@ -1,20 +1,31 @@
-// utils styles
-@import "./utils/variables";
-@import "./utils/visually-hidden";
-@import "./utils/placeholders";
-@import "./utils/mixins";
-
 // base styles
 @import "./base/base";
 @import "./base/reset";
 
 // components styles
 @import "./components/section";
-@import "./components/components";
+@import "./components/address";
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/header";
+@import "./components/hiro";
+@import "./components/prem";
+@import "./components/photo";
+@import "./components/work";
 @import "./components/container";
+@import "./components/footer";
+@import "./components/filtr";
+@import "./components/port";
+@import "./components/klient";
+@import "./components/modal";
 @import "./components/btn";
 @import "./components/socials";
 
+// utils styles
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 
 
 
