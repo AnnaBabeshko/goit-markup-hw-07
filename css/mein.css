@@ -42,7 +42,6 @@ address {
   margin-bottom: 9px;
   margin-right: 70px;
 }
-
 .address__item:last-child {
   margin-bottom: 0px;
 }
@@ -53,9 +52,7 @@ address {
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
 }
-
-.address__link:hover,
-.address__link:focus {
+.address__link:hover, .address__link:focus {
   color: var(--accent-color);
 }
 
@@ -65,9 +62,7 @@ address {
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
 }
-
-.address__contact:hover,
-.address__contact:focus {
+.address__contact:hover, .address__contact:focus {
   color: var(--accent-color);
 }
 
@@ -85,9 +80,7 @@ address {
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
 }
-
-.logo__start:hover,
-.logo__start:focus {
+.logo__start:hover, .logo__start:focus {
   color: var(--text-color);
 }
 
@@ -100,9 +93,7 @@ address {
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
 }
-
-.logo__end:hover,
-.logo__end:focus {
+.logo__end:hover, .logo__end:focus {
   color: var(--accent-color);
 }
 
@@ -123,9 +114,7 @@ address {
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
 }
-
-.logo__item:hover,
-.logo__item:focus {
+.logo__item:hover, .logo__item:focus {
   color: var(--accent-color);
 }
 
@@ -147,21 +136,9 @@ address {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: var(--accent-color);
 }
-
-.current {
-  color: var(--accent-color);
-  content: "";
-}
-
-.nav__link.current::after {
-  opacity: 1;
-}
-
 .nav__link::after {
   content: "";
   position: absolute;
@@ -180,11 +157,18 @@ address {
   transition: transform var(--anim-fast), opacity var(--anim-fast);
   transition: transform var(--anim-fast), opacity var(--anim-fast), -webkit-transform var(--anim-fast);
 }
-
-.nav__link:hover:after,
-.nav__link:focus:after {
+.nav__link:hover::after, .nav__link:focus::after {
   -webkit-transform: translateX(-50%) scaleX(1);
           transform: translateX(-50%) scaleX(1);
+  opacity: 1;
+}
+
+.current {
+  color: var(--accent-color);
+  content: "";
+}
+
+.nav__link.current::after {
   opacity: 1;
 }
 
@@ -230,9 +214,7 @@ address {
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
 }
-
-.site__descr:hover,
-.site__descr:focus {
+.site__descr:hover, .site__descr:focus {
   color: var(--accent-color);
 }
 
@@ -285,7 +267,6 @@ address {
   display: block;
   content: " ";
   height: 120px;
-  /*outline: 1px solid red;*/
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
@@ -496,7 +477,6 @@ address {
 .filtr__item {
   margin-right: 8px;
 }
-
 .filtr__item:last-child {
   margin-right: 0px;
 }
@@ -559,9 +539,7 @@ address {
   transition: box-shadow var(--anim-fast);
   transition: box-shadow var(--anim-fast), -webkit-box-shadow var(--anim-fast);
 }
-
-.port__link:hover,
-.port__link:focus {
+.port__link:hover, .port__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -574,7 +552,6 @@ address {
 
 .port__cart {
   padding: 20px 24px;
-  /*outline: 2px solid green;*/
   border: 1px solid #EEEEEE;
 }
 
@@ -632,9 +609,7 @@ address {
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
 }
-
-.klient__link:hover,
-.klient__link:focus {
+.klient__link:hover, .klient__link:focus {
   color: var(--accent-color);
 }
 
@@ -741,7 +716,6 @@ address {
   -webkit-transition: border-color var(--anim-fast);
   transition: border-color var(--anim-fast);
 }
-
 .modal__field:focus {
   border-color: var(--accent-color);
 }
@@ -755,8 +729,7 @@ address {
   -webkit-transition: fill var(--anim-fast);
   transition: fill var(--anim-fast);
 }
-
-.modal__field:focus + .form-icon {
+.form-icon:focus + .form-icon {
   fill: var(--accent-color);
 }
 
@@ -771,44 +744,38 @@ address {
   -webkit-transition: border-color var(--anim-fast);
   transition: border-color var(--anim-fast);
 }
-
 .form-message:focus {
   border-color: var(--accent-color);
 }
-
-.form-massage::-webkit-input-placeholder {
+.form-message::-webkit-input-placeholder {
   margin-top: 10px;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
-.form-massage::-moz-placeholder {
+.form-message::-moz-placeholder {
   margin-top: 10px;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
-.form-massage:-ms-input-placeholder {
+.form-message:-ms-input-placeholder {
   margin-top: 10px;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
-.form-massage::-ms-input-placeholder {
+.form-message::-ms-input-placeholder {
   margin-top: 10px;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
-.form-massage::placeholder {
+.form-message::placeholder {
   margin-top: 10px;
   font-size: 12px;
   line-height: 1.1666666667;
@@ -847,7 +814,6 @@ address {
   -webkit-transition: 500ms;
   transition: 500ms;
 }
-
 .checkbox:checked {
   outline-color: var(--accent-color);
   background-color: var(--accent-color);
@@ -894,9 +860,7 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
-
-.hiro__btn:hover,
-.hiro__btn:focus {
+.hiro__btn:hover, .hiro__btn:focus {
   color: var(--primari-text-color);
   background-color: var(--discript-background-color);
 }
@@ -919,9 +883,7 @@ button {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form-btn:hover,
-.form-btn:focus {
+.form-btn:hover, .form-btn:focus {
   background-color: var(--grey-color);
 }
 
@@ -935,14 +897,12 @@ button {
   color: var(--primari-text-color);
   background-color: var(--discript-background-color);
   padding: 6px 25px;
-  -webkit-transition: color var(--anim-fast), background-color var(), -webkit-box-shadow var(--anim-fast);
-  transition: color var(--anim-fast), background-color var(), -webkit-box-shadow var(--anim-fast);
-  transition: box-shadow var(--anim-fast), color var(--anim-fast), background-color var();
-  transition: box-shadow var(--anim-fast), color var(--anim-fast), background-color var(), -webkit-box-shadow var(--anim-fast);
+  -webkit-transition: color var(--anim-fast), background-color var(--anim-fast), -webkit-box-shadow var(--anim-fast);
+  transition: color var(--anim-fast), background-color var(--anim-fast), -webkit-box-shadow var(--anim-fast);
+  transition: box-shadow var(--anim-fast), color var(--anim-fast), background-color var(--anim-fast);
+  transition: box-shadow var(--anim-fast), color var(--anim-fast), background-color var(--anim-fast), -webkit-box-shadow var(--anim-fast);
 }
-
-.filtr__btn:hover,
-.filtr__btn:focus {
+.filtr__btn:hover, .filtr__btn:focus {
   color: var(--background-color);
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1015,9 +975,7 @@ button {
   -webkit-transition: background-color var(--anim-fast);
   transition: background-color var(--anim-fast);
 }
-
-.socials__item:hover,
-.socials__item:focus {
+.socials__item:hover, .socials__item:focus {
   background-color: var(--accent-color);
 }
 

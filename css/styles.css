@@ -495,7 +495,7 @@
     color: var(--primari-text-color);
     background-color: var(--discript-background-color);
     padding: 6px 25px;
-    transition: box-shadow var(--anim-fast), color var(--anim-fast), background-color var() ;
+    transition: box-shadow var(--anim-fast), color var(--anim-fast), background-color var(--anim-fast);
   }
   .filtr__btn:hover,
   .filtr__btn:focus {

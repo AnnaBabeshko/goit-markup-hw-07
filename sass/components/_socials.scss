@@ -17,7 +17,7 @@
     transition: background-color var(--anim-fast);
 
     &:hover,
-    :focus {
+    &:focus {
         background-color: var(--accent-color);
     }
 }
